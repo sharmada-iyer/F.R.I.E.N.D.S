@@ -1,0 +1,398 @@
+body{
+	background-color: #0c2136;
+	font-size: 1.12em;
+ 	text-align: justify;
+ 	font-family: "Roboto Condensed", sans-serif;
+ 	color:rgba(255,255,255,0.6);
+}
+
+*{
+	margin:0;
+	padding:0;
+	list-style: none;
+	text-decoration: none;
+}
+
+.sidebar{
+	position: fixed;
+	left:-200px;
+	width:200px;
+	height:100%;
+	background: #042331;
+	transition: all 0.5s ease;
+}
+
+.sidebar header{
+	font-size: 22px;
+	color: white;
+	text-align: center;
+	line-height: 50px;
+	background: #063146;
+	user-select: none;
+}
+
+.sidebar ul a{
+	display: block;
+	height: 100%;
+	width: 100%;
+	line-height: 45px;
+	font-size: 20px;
+	color: white;
+	padding-left: 20px;
+	box-sizing: border-box;
+	border-top: 1px solid rgba(255,255,255,0.1);
+	border-bottom: 1px solid black;
+	transition: 0.3s;
+}
+
+ul li:hover a{
+	padding-left: 30px;
+}
+
+#check{
+	display:none;
+}
+
+label #btn,label #cancel{
+	position: absolute;
+	cursor: pointer;
+	background: #042331;
+	border-radius: 2px;
+}
+
+label #btn{
+	left:20px;
+	top:20px;
+	font-size: 35px;
+	color: white;
+	padding: 3px 6px;
+	transition: all 0.5s;
+}
+
+label #cancel{
+	z-index: 1111;
+	left:-160px;
+	top:12px;
+	font-size:25px;
+	color:#0a5275;
+	padding:3px 8px;
+	transition: all 0.5s ease;
+}
+
+#check:checked ~ .sidebar{
+	left:0;
+}
+
+#check:checked ~ label #btn{
+	left:200px;
+	opacity: 0;
+	pointer-events: none;
+}
+
+#check:checked ~ label #cancel{
+	left:160px;
+}
+
+#check:checked ~ .cc{
+	margin-left:200px;
+}
+
+.cc{
+	height:100%;
+	width:97%;
+	margin-top:20px;
+	transition: all 0.5s ease;
+	padding-left: 20px; 
+	padding-right: 20px;
+}
+
+#title {
+	color: rgba(225,255,255,0.9);
+	font-family: "Oswald", sans-serif;
+	animation:t-e 4s ease-in-out 1s 2 alternate ;
+	-webkit-animation: t-e 4s ease-in-out 1s 2 alternate;
+	-moz-animation: t-e 4s ease-in-out 1s 2 alternate;
+	-o-animation: t-e 4s ease-in-out 1s 2 alternate;
+	-ms-animation: t-e 4s ease-in-out 1s 2 alternate;
+	margin-left: 55px;
+}
+
+.ss {
+	color:rgba(255,255,255,0.8);
+	background: rgba(0,71,143,0.2);
+	font-family: "Oswald",sans-serif;
+	text-transform: uppercase;
+}
+
+.link {
+	text-decoration: underline;
+	color: #3ca2a6;
+}
+
+.one{ 
+	font-style: italic;
+
+}
+
+.link:hover{color: #56e3e8;}
+
+.oof{
+	height:50%;
+	width:70%;
+	border:solid;
+}
+
+.new{
+	height:200px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.item{
+	background: rgba(94,239,255,0.6);
+	color:black;
+	font-weight: 400;
+	font-size: 20px;
+	text-align: center;
+	font-family: monospace;
+	width: 50px;
+	line-height: 30px;
+	margin:10px;
+}
+
+#bs{
+	font-weight: 400;
+	font-style: oblique;
+
+}
+.grid{
+	margin:40px;
+	height: 100px;
+	display:grid;
+	grid-template-columns:auto auto auto;
+	grid-template-rows:auto auto;
+}
+
+.ii{
+	font-family: sans-serif;
+	font-weight:550;
+	text-align:center;
+	width:55%;
+	line-height:30px;
+	margin: 10px;
+}
+
+#bs{
+	float: right;
+}
+#te:hover{
+	padding: 10px 10px;
+}
+#te{
+	height:50%;
+	width:40%;
+	margin:20px 20px;
+	transition: padding 500ms ease;
+	-webkit-transition:padding 500ms ease;
+	-moz-transition:padding 500ms ease;
+	-o-transition:padding 500ms ease;
+	-ms-transition:padding 500ms ease;
+}
+
+#sb{
+	display: inline-block;
+	padding: 10px 20px;
+	color:#2196f3;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	text-decoration: none;
+	font-size: 15px;
+	overflow: hidden;
+	transition: 0.2s;
+}
+
+#sb:hover{
+	color:#255784;
+	background: #2196f3;
+	box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3,0 0 80px #2196f3;
+	transition-delay: 500ms;
+
+}
+
+@keyframes t-e {
+	0%{
+		background:rgba(252,31,15,0.7) ; 
+	}
+	20%{
+		background:rgba(63,252,246,0.7) ; 
+	}
+	40%{
+		background:rgba(252,240,63,0.7) ; 
+	}
+	60%{
+		background: rgba(252,31,15,0.7) ;
+	}
+	80%{
+		background: rgba(252,240,63,0.7); 
+	}
+	100%{
+		background: rgba(63,252,246,0.7); 
+	}
+}
+
+.oof:hover{
+	padding: 10px 10px; 
+}
+
+.oof{
+	transition:padding 500ms ease;
+	-webkit-transition:padding 500ms ease;
+	-moz-transition:padding 500ms ease;
+	-o-transition:padding 500ms ease;
+	-ms-transition:padding 500ms ease;
+}
+.red{
+	color:red;
+}
+.yellow{
+	color:yellow;
+}
+.blue{
+	color:blue;
+}
+
+.side{
+	color: rgb(163,117,36);
+	padding:0px;
+	margin:0px;
+}
+
+#frd{
+	float:right;
+	height:450px;
+	width:4%;
+	background:#6d9fa1;
+	text-align: center;
+	color:black;
+}
+.p{
+	font-weight:600;
+	padding:0px;
+}
+
+.ikr{
+	float:right;
+	height:610px;
+	width:55%;
+	background:rgba(109,159,161,0.5);
+	margin:100px 40px;
+	color:#1ca0ba;
+}
+.ikr{
+	display: grid;
+	grid-template-rows: auto auto auto;
+	grid-template-columns: auto auto;
+
+}
+
+.mm1{
+	color:rgb(252,31,15);
+}
+.mm2{
+	color:rgb(63,252,246);
+}
+.mm3{
+	color:rgb(252,240,63);
+}
+
+.of{
+	height:30%;
+	width:20%;
+	float: right;
+	margin:10px 10px;
+}
+
+.no{
+	margin-left:30px;
+	margin-top:30px;
+	height:50%;
+	width:60%;
+	border:solid;
+}
+
+.no:hover{
+	padding:10px 10px;
+}
+
+.no{
+	transition:padding 500ms ease;
+	-webkit-transition:padding 500ms ease;
+	-moz-transition:padding 500ms ease;
+	-o-transition:padding 500ms ease;
+	-ms-transition:padding 500ms ease;
+}
+
+.para1{
+	margin: 20px 0px;
+}
+
+.two{
+	color:grey;
+}
+
+.zzk{
+	margin-top: 20px;
+}
+
+.n1:hover{
+	color:#636363;
+	transition: 1s ease;
+
+}
+
+.n1{
+	color:black;
+}
+
+/*.photos{
+	position: relative;
+
+}
+
+#one{
+    -webkit-transform: rotate(5deg);
+    -moz-transform: rotate(5deg);
+    -o-transform: rotate(5deg);
+    transform: rotate(5deg);
+}
+ 
+#two{
+    -webkit-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    -o-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+}
+ 
+#three{
+    -webkit-transform: rotate(7deg);
+    -moz-transform: rotate(7deg);
+    -o-transform: rotate(7deg);
+    transform: rotate(7deg);
+}
+
+.photos:hover {
+    -webkit-transform:scale(1.1);
+    -moz-transform:scale(1.1);
+    -o-transform:scale(1.1);
+    transform:scale(1.1);
+    z-index: 10;
+}
+
+.photos {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}*/
